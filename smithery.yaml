@@ -1,0 +1,13 @@
+startCommand:
+  type: http
+  url: https://ares-mcp-production.up.railway.app/mcp
+  configSchema:
+    type: object
+    properties:
+      apiKey:
+        type: string
+        title: API Key (Optional)
+        description: "Remove the 10 calls/day limit. Get your key at: https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00"
+    required: []
+  exampleConfig:
+    apiKey: "km_your_key_here"
