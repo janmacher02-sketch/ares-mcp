@@ -31,6 +31,15 @@ Czech & Slovak business registry MCP server. Works with Claude Desktop, Cursor, 
 }
 ```
 
+## Pricing
+
+| Tier | Limit | Price |
+|------|-------|-------|
+| Free | 10 calls/day | $0 |
+| Basic | 1,000 calls/month | [$9/month](https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00) |
+
+[Get API key →](https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00)
+
 ## License
 
 MIT
