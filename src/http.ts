@@ -18,7 +18,7 @@ async function authMiddleware(req: Request, res: Response, next: NextFunction) {
   const apiKey = authHeader.startsWith("Bearer ") ? authHeader.slice(7) : (req.headers["x-api-key"] as string ?? "");
 
   if (apiKey) {
-    const { result, error } = await unkey.keys.verify({ key: apiKey, apiId: UNKEY_API_ID });
+    const { result, error } = await unkey.keys.verifyKey({ key: apiKey, apiId: UNKEY_API_ID });
     if (error || !result?.valid) {
       res.status(401).json({ error: "Invalid API key.", message: "Get your free API key at https://aresdata.janmacher.dev" });
       return;
