@@ -1,3 +1,25 @@
+name: ares-mcp
+displayName: Czech & Slovak Business Registry
+description: |
+  Czech & Slovak business registry MCP server. Look up companies by IČO, search by name,
+  check insolvency status (ISIR), and query the Slovak ORSR — all in one tool.
+
+  Free tier: 10 calls/day. Unlimited access: $9/month → https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00
+version: 1.0.0
+license: MIT
+categories:
+  - finance
+  - business
+  - czech
+tags:
+  - czech
+  - slovak
+  - ares
+  - ico
+  - insolvency
+  - isir
+  - orsr
+  - business-registry
 startCommand:
   type: http
   url: https://ares-mcp-production.up.railway.app/mcp
@@ -6,8 +28,8 @@ startCommand:
     properties:
       apiKey:
         type: string
-        title: API Key (Optional)
-        description: "Remove the 10 calls/day limit. Get your key at: https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00"
+        title: API Key — Unlimited Access ($9/month)
+        description: "Free tier: 10 calls/day. Remove limit with a paid key → https://buy.stripe.com/4gM3cw8Dz28qcAYdHJaEE00"
     required: []
   exampleConfig:
     apiKey: "km_your_key_here"
